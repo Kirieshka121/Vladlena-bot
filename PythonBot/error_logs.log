@@ -1,0 +1,790 @@
+2025-04-15 22:23:42,748 - ERROR - Ошибка при обработке регистрации: 404 Not Found (error code: 10003): Unknown Channel
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 632, in handle_registration_start
+    await channel.delete()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\abc.py", line 871, in delete
+    await self._state.http.delete_channel(self.id, reason=reason)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\http.py", line 758, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10003): Unknown Channel
+2025-04-15 22:33:05,209 - ERROR - Ошибка при отправке шутки: 403 Forbidden (error code: 50001): Missing Access
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 316, in on_message
+    await joke_msg.delete()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\message.py", line 1304, in delete
+    await self._state.http.delete_message(self.channel.id, self.id)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\http.py", line 756, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50001): Missing Access
+2025-04-15 22:33:56,823 - ERROR - Ошибка при отправке шутки: 403 Forbidden (error code: 50001): Missing Access
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 316, in on_message
+    await joke_msg.delete()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\message.py", line 1304, in delete
+    await self._state.http.delete_message(self.channel.id, self.id)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\http.py", line 756, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50001): Missing Access
+2025-04-15 22:35:02,029 - ERROR - Ошибка при отправке шутки: 403 Forbidden (error code: 50001): Missing Access
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 316, in on_message
+    await joke_msg.delete()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\message.py", line 1304, in delete
+    await self._state.http.delete_message(self.channel.id, self.id)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\http.py", line 756, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50001): Missing Access
+2025-04-15 22:35:55,512 - ERROR - Ошибка при отправке шутки: 403 Forbidden (error code: 50001): Missing Access
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 316, in on_message
+    await joke_msg.delete()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\message.py", line 1304, in delete
+    await self._state.http.delete_message(self.channel.id, self.id)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\http.py", line 756, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50001): Missing Access
+2025-04-15 22:41:04,267 - ERROR - Ошибка при обработке регистрации: 404 Not Found (error code: 10062): Unknown interaction
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 674, in handle_registration_start
+    await interaction.response.defer(ephemeral=True)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\interactions.py", line 844, in defer
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-04-15 22:46:07,490 - ERROR - Ошибка при обработке регистрации: 'config'
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 852, in handle_registration_start
+    await RoyalResponse.get_response(
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 166, in get_response
+    config = await load_data("config.json")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 128, in load_data
+    async with bot.locks[file_name.split('.')[0]]:
+               ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'config'
+2025-04-15 22:46:27,072 - ERROR - Ошибка при обработке регистрации: 'config'
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 813, in handle_registration_start
+    await RoyalResponse.get_response(
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 166, in get_response
+    config = await load_data("config.json")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 128, in load_data
+    async with bot.locks[file_name.split('.')[0]]:
+               ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'config'
+2025-04-16 01:26:44,236 - ERROR - Ошибка при сбросе игрока: 403 Forbidden (error code: 50013): Missing Permissions
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 628, in reset_player
+    await member.edit(nick=original_nick)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\member.py", line 939, in edit
+    data = await http.edit_member(guild_id, self.id, reason=reason, **payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\http.py", line 756, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50013): Missing Permissions
+2025-04-16 12:42:53,744 - ERROR - Ошибка при старте регистрации: 400 Bad Request (error code: 50035): Invalid Form Body
+In components.0.components.0.options: Must be between 1 and 25 in length.
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 587, in start
+    await self.choose_country()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 618, in choose_country
+    await self.channel.send(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\abc.py", line 1644, in send
+    data = await state.http.send_message(channel.id, params=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\http.py", line 762, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In components.0.components.0.options: Must be between 1 and 25 in length.
+2025-04-16 12:43:00,292 - ERROR - Ошибка при старте регистрации: 400 Bad Request (error code: 50035): Invalid Form Body
+In components.0.components.0.options: Must be between 1 and 25 in length.
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 587, in start
+    await self.choose_country()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 618, in choose_country
+    await self.channel.send(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\abc.py", line 1644, in send
+    data = await state.http.send_message(channel.id, params=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\http.py", line 762, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In components.0.components.0.options: Must be between 1 and 25 in length.
+2025-04-16 12:43:28,090 - ERROR - Ошибка при старте регистрации: 400 Bad Request (error code: 50035): Invalid Form Body
+In components.0.components.0.options: Must be between 1 and 25 in length.
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 587, in start
+    await self.choose_country()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 618, in choose_country
+    await self.channel.send(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\abc.py", line 1644, in send
+    data = await state.http.send_message(channel.id, params=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\http.py", line 762, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In components.0.components.0.options: Must be between 1 and 25 in length.
+2025-04-16 14:52:31,660 - ERROR - Ошибка при старте регистрации: maximum number of children exceeded
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 588, in start
+    await self.choose_country()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 646, in choose_country
+    await self.choose_principles()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 657, in choose_principles
+    view = PrinciplesView(principles)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 447, in __init__
+    self.refresh_buttons()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 459, in refresh_buttons
+    self.add_item(PrincipleButton(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\ui\view.py", line 329, in add_item
+    raise ValueError('maximum number of children exceeded')
+ValueError: maximum number of children exceeded
+2025-04-16 20:57:12,256 - ERROR - Ошибка при старте регистрации: 'CountrySelect' object has no attribute '_view'
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 724, in start
+    await self.choose_country()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 758, in choose_country
+    view = CountrySelectView(countries, group)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 408, in __init__
+    self.add_item(CountrySelect(countries, self.get_page()))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 431, in __init__
+    placeholder=f"Страница {self.view.current_page + 1}",
+                            ^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\ui\item.py", line 121, in view
+    return self._view
+           ^^^^^^^^^^
+AttributeError: 'CountrySelect' object has no attribute '_view'. Did you mean: 'view'?
+2025-04-16 20:57:13,187 - ERROR - Ошибка при старте регистрации: 'CountrySelect' object has no attribute '_view'
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 724, in start
+    await self.choose_country()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 758, in choose_country
+    view = CountrySelectView(countries, group)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 408, in __init__
+    self.add_item(CountrySelect(countries, self.get_page()))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 431, in __init__
+    placeholder=f"Страница {self.view.current_page + 1}",
+                            ^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\ui\item.py", line 121, in view
+    return self._view
+           ^^^^^^^^^^
+AttributeError: 'CountrySelect' object has no attribute '_view'. Did you mean: 'view'?
+2025-04-16 20:57:21,922 - ERROR - Ошибка при старте регистрации: 'CountrySelect' object has no attribute '_view'
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 724, in start
+    await self.choose_country()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 758, in choose_country
+    view = CountrySelectView(countries, group)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 408, in __init__
+    self.add_item(CountrySelect(countries, self.get_page()))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 431, in __init__
+    placeholder=f"Страница {self.view.current_page + 1}",
+                            ^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\ui\item.py", line 121, in view
+    return self._view
+           ^^^^^^^^^^
+AttributeError: 'CountrySelect' object has no attribute '_view'. Did you mean: 'view'?
+2025-04-16 20:57:36,664 - ERROR - Ошибка при старте регистрации: 'CountrySelect' object has no attribute '_view'
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 724, in start
+    await self.choose_country()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 758, in choose_country
+    view = CountrySelectView(countries, group)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 408, in __init__
+    self.add_item(CountrySelect(countries, self.get_page()))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 431, in __init__
+    placeholder=f"Страница {self.view.current_page + 1}",
+                            ^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\ui\item.py", line 121, in view
+    return self._view
+           ^^^^^^^^^^
+AttributeError: 'CountrySelect' object has no attribute '_view'. Did you mean: 'view'?
+2025-04-16 20:57:43,624 - ERROR - Ошибка при старте регистрации: 'CountrySelect' object has no attribute '_view'
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 724, in start
+    await self.choose_country()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 758, in choose_country
+    view = CountrySelectView(countries, group)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 408, in __init__
+    self.add_item(CountrySelect(countries, self.get_page()))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 431, in __init__
+    placeholder=f"Страница {self.view.current_page + 1}",
+                            ^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\ui\item.py", line 121, in view
+    return self._view
+           ^^^^^^^^^^
+AttributeError: 'CountrySelect' object has no attribute '_view'. Did you mean: 'view'?
+2025-04-16 20:57:58,927 - ERROR - Ошибка при старте регистрации: 'CountrySelect' object has no attribute '_view'
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 724, in start
+    await self.choose_country()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 758, in choose_country
+    view = CountrySelectView(countries, group)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 408, in __init__
+    self.add_item(CountrySelect(countries, self.get_page()))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 431, in __init__
+    placeholder=f"Страница {self.view.current_page + 1}",
+                            ^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\ui\item.py", line 121, in view
+    return self._view
+           ^^^^^^^^^^
+AttributeError: 'CountrySelect' object has no attribute '_view'. Did you mean: 'view'?
+2025-04-16 21:02:38,097 - ERROR - Ошибка при старте регистрации: 'CountrySelect' object has no attribute '_view'
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 724, in start
+    await self.choose_country()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 758, in choose_country
+    view = CountrySelectView(countries, group)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 408, in __init__
+    self.add_item(CountrySelect(countries, self.get_page()))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 431, in __init__
+    placeholder=f"Страница {self.view.current_page + 1}",
+                            ^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\ui\item.py", line 121, in view
+    return self._view
+           ^^^^^^^^^^
+AttributeError: 'CountrySelect' object has no attribute '_view'. Did you mean: 'view'?
+2025-04-16 21:05:02,261 - ERROR - Ошибка при старте регистрации: 'CountrySelect' object has no attribute '_view'
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 724, in start
+    await self.choose_country()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 758, in choose_country
+    view = CountrySelectView(countries, group)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 408, in __init__
+    self.add_item(CountrySelect(countries, self.get_page()))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 431, in __init__
+    placeholder=f"Страница {self.view.current_page + 1}",
+                            ^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\ui\item.py", line 121, in view
+    return self._view
+           ^^^^^^^^^^
+AttributeError: 'CountrySelect' object has no attribute '_view'. Did you mean: 'view'?
+2025-04-16 21:07:51,410 - ERROR - Ошибка при старте регистрации: 'CountrySelectView' object has no attribute 'get_page'
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 718, in start
+    await self.choose_country()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 752, in choose_country
+    view = CountrySelectView(countries, group)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 428, in __init__
+    self.get_page(),
+    ^^^^^^^^^^^^^
+AttributeError: 'CountrySelectView' object has no attribute 'get_page'
+2025-04-16 21:13:25,090 - ERROR - Ошибка при старте регистрации: CountrySelectView.__init__() missing 1 required positional argument: 'available_countries'
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 762, in start
+    await self.choose_country()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 796, in choose_country
+    view = CountrySelectView(countries, group)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CountrySelectView.__init__() missing 1 required positional argument: 'available_countries'
+2025-04-16 21:14:35,260 - ERROR - Ошибка при старте регистрации: CountrySelectView.__init__() missing 1 required positional argument: 'available_countries'
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 762, in start
+    await self.choose_country()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 796, in choose_country
+    view = CountrySelectView(countries, group)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CountrySelectView.__init__() missing 1 required positional argument: 'available_countries'
+2025-04-16 21:14:46,937 - ERROR - Ошибка при старте регистрации: CountrySelectView.__init__() missing 1 required positional argument: 'available_countries'
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 762, in start
+    await self.choose_country()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 796, in choose_country
+    view = CountrySelectView(countries, group)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CountrySelectView.__init__() missing 1 required positional argument: 'available_countries'
+2025-04-16 21:16:02,095 - ERROR - Ошибка при старте регистрации: CountrySelectView.__init__() missing 1 required positional argument: 'available_countries'
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 762, in start
+    await self.choose_country()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 796, in choose_country
+    view = CountrySelectView(countries, group)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CountrySelectView.__init__() missing 1 required positional argument: 'available_countries'
+2025-04-16 21:16:46,555 - ERROR - Ошибка при старте регистрации: CountrySelectView.__init__() missing 1 required positional argument: 'available_countries'
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 762, in start
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 796, in choose_country
+    await self.channel.send(
+           ^^^^^^^^^^^^^^^^^^
+TypeError: CountrySelectView.__init__() missing 1 required positional argument: 'available_countries'
+2025-04-16 21:17:29,301 - ERROR - Ошибка при старте регистрации: CountrySelectView.__init__() missing 1 required positional argument: 'available_countries'
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 762, in start
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 796, in choose_country
+    await self.channel.send(
+           ^^^^^^^^^^^^^^^^^^
+TypeError: CountrySelectView.__init__() missing 1 required positional argument: 'available_countries'
+2025-04-16 21:19:58,924 - ERROR - Ошибка при старте регистрации: CountrySelectView.__init__() missing 1 required positional argument: 'available_countries'
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 762, in start
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 796, in choose_country
+    await self.channel.send(
+           ^^^^^^^^^^^^^^^^^^
+TypeError: CountrySelectView.__init__() missing 1 required positional argument: 'available_countries'
+2025-04-16 21:20:38,098 - ERROR - Ошибка при старте регистрации: 'CountrySelectView' object has no attribute 'available'
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 761, in start
+    await self.choose_country()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 798, in choose_country
+    view = CountrySelectView(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 426, in __init__
+    self.update_components()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 432, in update_components
+    page = self.get_page()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 447, in get_page
+    return self.available[start:end]
+           ^^^^^^^^^^^^^^
+AttributeError: 'CountrySelectView' object has no attribute 'available'
+2025-04-16 21:20:42,575 - ERROR - Ошибка при старте регистрации: 'CountrySelectView' object has no attribute 'available'
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 761, in start
+    await self.choose_country()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 798, in choose_country
+    view = CountrySelectView(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 426, in __init__
+    self.update_components()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 432, in update_components
+    page = self.get_page()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 447, in get_page
+    return self.available[start:end]
+           ^^^^^^^^^^^^^^
+AttributeError: 'CountrySelectView' object has no attribute 'available'
+2025-04-16 21:20:56,313 - ERROR - Ошибка при старте регистрации: 'CountrySelectView' object has no attribute 'available'
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 761, in start
+    await self.choose_country()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 798, in choose_country
+    view = CountrySelectView(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 426, in __init__
+    self.update_components()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 432, in update_components
+    page = self.get_page()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 447, in get_page
+    return self.available[start:end]
+           ^^^^^^^^^^^^^^
+AttributeError: 'CountrySelectView' object has no attribute 'available'
+2025-04-16 21:21:13,703 - ERROR - Ошибка при старте регистрации: 'CountrySelectView' object has no attribute 'available'
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 761, in start
+    await self.choose_country()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 798, in choose_country
+    view = CountrySelectView(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 426, in __init__
+    self.update_components()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 432, in update_components
+    page = self.get_page()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 447, in get_page
+    return self.available[start:end]
+           ^^^^^^^^^^^^^^
+AttributeError: 'CountrySelectView' object has no attribute 'available'
+2025-04-16 21:21:36,737 - ERROR - Ошибка при старте регистрации: 'CountrySelectView' object has no attribute 'available'
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 761, in start
+    await self.choose_country()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 798, in choose_country
+    view = CountrySelectView(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 426, in __init__
+    self.update_components()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 432, in update_components
+    page = self.get_page()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 447, in get_page
+    return self.available[start:end]
+           ^^^^^^^^^^^^^^
+AttributeError: 'CountrySelectView' object has no attribute 'available'
+2025-04-16 21:26:03,762 - ERROR - Ошибка при старте регистрации: 'PrinciplesView' object has no attribute 'confirm_callback'
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 750, in start
+    await self.choose_country()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 815, in choose_country
+    await self.choose_principles()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 826, in choose_principles
+    view = PrinciplesView(principles)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 584, in __init__
+    self.refresh_buttons()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 614, in refresh_buttons
+    confirm_btn.callback = self.confirm_callback
+                           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PrinciplesView' object has no attribute 'confirm_callback'
+2025-04-16 21:26:14,530 - ERROR - Ошибка при старте регистрации: 'PrinciplesView' object has no attribute 'confirm_callback'
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 750, in start
+    await self.choose_country()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 815, in choose_country
+    await self.choose_principles()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 826, in choose_principles
+    view = PrinciplesView(principles)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 584, in __init__
+    self.refresh_buttons()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 614, in refresh_buttons
+    confirm_btn.callback = self.confirm_callback
+                           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PrinciplesView' object has no attribute 'confirm_callback'
+2025-04-16 21:28:16,318 - ERROR - Ошибка при старте регистрации: 'PrinciplesView' object has no attribute 'confirm_callback'
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 750, in start
+    await self.choose_country()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 815, in choose_country
+    await self.choose_principles()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 826, in choose_principles
+    view = PrinciplesView(principles)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 584, in __init__
+    self.refresh_buttons()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 614, in refresh_buttons
+    confirm_btn.callback = self.confirm_callback
+                           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PrinciplesView' object has no attribute 'confirm_callback'
+2025-04-16 21:29:14,551 - ERROR - Ошибка при старте регистрации: 'PrinciplesView' object has no attribute 'confirm_callback'
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 750, in start
+    await self.choose_country()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 815, in choose_country
+    await self.choose_principles()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 826, in choose_principles
+    view = PrinciplesView(principles)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 584, in __init__
+    self.refresh_buttons()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 614, in refresh_buttons
+    confirm_btn.callback = self.confirm_callback
+                           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PrinciplesView' object has no attribute 'confirm_callback'
+2025-04-16 21:30:56,514 - ERROR - Ошибка при старте регистрации: 'PrinciplesView' object has no attribute 'confirm_callback'
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 750, in start
+    await self.choose_country()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 815, in choose_country
+    await self.choose_principles()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 826, in choose_principles
+    view = PrinciplesView(principles)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 584, in __init__
+    self.refresh_buttons()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 614, in refresh_buttons
+    confirm_btn.callback = self.confirm_callback
+                           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PrinciplesView' object has no attribute 'confirm_callback'
+2025-04-16 21:40:26,422 - ERROR - Ошибка при старте регистрации: 'PrinciplesView' object has no attribute 'confirm_callback'
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 750, in start
+    )
+      
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 815, in choose_country
+    try:
+        ^
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 826, in choose_principles
+    bot.offtopic_channel = offtopic_channel
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 584, in __init__
+    async def start(self):
+        ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 614, in refresh_buttons
+    )
+      
+AttributeError: 'PrinciplesView' object has no attribute 'confirm_callback'
+2025-04-16 22:23:32,939 - ERROR - Ошибка регистрации: item would not fit at row 0 (6 > 5 width)
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 610, in start
+    await self._select_principles()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 665, in _select_principles
+    view.add_item(PrincipleButton(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\ui\view.py", line 334, in add_item
+    self.__weights.add_item(item)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\ui\view.py", line 115, in add_item
+    raise ValueError(f'item would not fit at row {item.row} ({total} > 5 width)')
+ValueError: item would not fit at row 0 (6 > 5 width)
+2025-04-16 22:26:53,198 - ERROR - Ошибка регистрации: row cannot be negative or greater than or equal to 5
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 609, in start
+    await self._select_principles()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 672, in _select_principles
+    view.add_item(PrincipleButton(
+                  ^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 510, in __init__
+    super().__init__(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\ui\button.py", line 147, in __init__
+    self.row = row
+    ^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\ui\item.py", line 112, in row
+    raise ValueError('row cannot be negative or greater than or equal to 5')
+ValueError: row cannot be negative or greater than or equal to 5
+2025-04-16 22:28:00,127 - ERROR - Ошибка регистрации: row cannot be negative or greater than or equal to 5
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 609, in start
+    await self._select_principles()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 672, in _select_principles
+    view.add_item(PrincipleButton(
+                  ^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 510, in __init__
+    super().__init__(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\ui\button.py", line 147, in __init__
+    self.row = row
+    ^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\ui\item.py", line 112, in row
+    raise ValueError('row cannot be negative or greater than or equal to 5')
+ValueError: row cannot be negative or greater than or equal to 5
+2025-04-16 22:29:41,221 - ERROR - Ошибка регистрации: maximum number of children exceeded
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 609, in start
+    await self._select_principles()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 701, in _select_principles
+    view.add_item(next_btn)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\ui\view.py", line 329, in add_item
+    raise ValueError('maximum number of children exceeded')
+ValueError: maximum number of children exceeded
+2025-04-16 22:33:18,516 - ERROR - Ошибка регистрации: 'PrinciplesPaginator' object has no attribute 'view'
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 681, in start
+    await self._select_principles()
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 735, in _select_principles
+    await paginator.view.wait()
+          ^^^^^^^^^^^^^^
+AttributeError: 'PrinciplesPaginator' object has no attribute 'view'
+2025-04-16 22:41:45,947 - ERROR - Ошибка отображения принципов: 400 Bad Request (error code: 50035): Invalid Form Body
+In data.embeds.0.fields: Must be 25 or fewer in length.
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 1252, in list_principles
+    await interaction.response.send_message(embed=embed, ephemeral=True)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\interactions.py", line 1004, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\webhook\async_.py", line 226, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In data.embeds.0.fields: Must be 25 or fewer in length.
+2025-04-17 18:13:39,718 - ERROR - Ошибка в setup_server: 404 Not Found (error code: 10062): Unknown interaction
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 1003, in setup_server
+    await interaction.response.send_message(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\interactions.py", line 1004, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-04-17 18:14:16,406 - ERROR - Ошибка в setup_registration: 404 Not Found (error code: 10062): Unknown interaction
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 1048, in setup_registration
+    await interaction.response.send_message(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\interactions.py", line 1004, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-04-17 18:17:39,514 - ERROR - Ошибка регистрации: 404 Not Found (error code: 10062): Unknown interaction
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 759, in start
+    await self.interaction.response.send_message(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\interactions.py", line 1004, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-04-17 18:18:40,039 - ERROR - Ошибка регистрации: 404 Not Found (error code: 10062): Unknown interaction
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 759, in start
+    await self.interaction.response.send_message(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\interactions.py", line 1004, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-04-17 18:18:45,981 - ERROR - Ошибка регистрации: 404 Not Found (error code: 10062): Unknown interaction
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 759, in start
+    await self.interaction.response.send_message(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\interactions.py", line 1004, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-04-17 18:20:23,946 - ERROR - Ошибка в setup_registration: 404 Not Found (error code: 10062): Unknown interaction
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 1048, in setup_registration
+    await interaction.response.send_message(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\interactions.py", line 1004, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-04-17 18:21:14,138 - ERROR - Ошибка в команде profile: 404 Not Found (error code: 10062): Unknown interaction
+2025-04-17 18:31:47,592 - ERROR - Ошибка /countries: 404 Not Found (error code: 10062): Unknown interaction
+2025-04-17 18:31:49,147 - ERROR - Ошибка /countries: 404 Not Found (error code: 10062): Unknown interaction
+2025-04-17 18:35:29,530 - ERROR - Ошибка регистрации: 404 Not Found (error code: 10062): Unknown interaction
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 759, in start
+    await self.interaction.response.send_message(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\interactions.py", line 1004, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-04-17 18:36:03,423 - ERROR - Ошибка регистрации: 404 Not Found (error code: 10062): Unknown interaction
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 759, in start
+    await self.interaction.response.send_message(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\interactions.py", line 1004, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-04-17 18:44:38,242 - ERROR - Ошибка в setup_registration: 404 Not Found (error code: 10062): Unknown interaction
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 1048, in setup_registration
+    await interaction.response.send_message(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\interactions.py", line 1004, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-04-17 18:45:23,741 - ERROR - Ошибка /countries: 404 Not Found (error code: 10062): Unknown interaction
+2025-04-17 18:51:52,684 - ERROR - Ошибка /countries: 404 Not Found (error code: 10062): Unknown interaction
+2025-04-17 18:57:06,715 - ERROR - Ошибка /countries: 404 Not Found (error code: 10062): Unknown interaction
+2025-04-17 18:57:08,408 - ERROR - Ошибка /countries: 404 Not Found (error code: 10062): Unknown interaction
+2025-04-17 19:06:23,772 - ERROR - Ошибка регистрации: 404 Not Found (error code: 10062): Unknown interaction
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 759, in start
+    await self.interaction.response.send_message(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\interactions.py", line 1004, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-04-17 19:07:14,578 - ERROR - Ошибка регистрации: 404 Not Found (error code: 10062): Unknown interaction
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 759, in start
+    await self.interaction.response.send_message(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\interactions.py", line 1004, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-04-17 19:08:10,207 - ERROR - Ошибка регистрации: 404 Not Found (error code: 10062): Unknown interaction
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 759, in start
+    await self.interaction.response.send_message(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\interactions.py", line 1004, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-04-17 19:39:20,916 - ERROR - Ошибка /countries: 404 Not Found (error code: 10062): Unknown interaction
+2025-04-17 20:33:33,044 - ERROR - Ошибка регистрации: 404 Not Found (error code: 10062): Unknown interaction
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 759, in start
+    await self.interaction.response.send_message(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\interactions.py", line 1004, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-04-17 20:45:47,091 - ERROR - Ошибка удаления игрока: 404 Not Found (error code: 10062): Unknown interaction
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 1448, in delete_player
+    await interaction.response.send_message(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\interactions.py", line 1004, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-04-18 09:09:10,195 - ERROR - Ошибка регистрации: 404 Not Found (error code: 10062): Unknown interaction
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 1016, in start
+    await self.interaction.response.send_message(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\interactions.py", line 1004, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-04-18 10:10:01,590 - ERROR - Ошибка в setup_registration: 403 Forbidden (error code: 50013): Missing Permissions
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 1352, in setup_registration
+    message = await channel.send(embed=embed, view=view)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\abc.py", line 1644, in send
+    data = await state.http.send_message(channel.id, params=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\http.py", line 756, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50013): Missing Permissions
+2025-04-18 10:10:23,480 - ERROR - Ошибка в setup_registration: 403 Forbidden (error code: 50013): Missing Permissions
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 1352, in setup_registration
+    message = await channel.send(embed=embed, view=view)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\abc.py", line 1644, in send
+    data = await state.http.send_message(channel.id, params=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\http.py", line 756, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50013): Missing Permissions
+2025-04-18 10:10:46,319 - ERROR - Ошибка в setup_registration: 403 Forbidden (error code: 50013): Missing Permissions
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 1352, in setup_registration
+    message = await channel.send(embed=embed, view=view)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\abc.py", line 1644, in send
+    data = await state.http.send_message(channel.id, params=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\http.py", line 756, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50013): Missing Permissions
+2025-04-18 10:11:19,771 - ERROR - Ошибка в setup_registration: 403 Forbidden (error code: 50013): Missing Permissions
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\PythonBot\main.py", line 1352, in setup_registration
+    message = await channel.send(embed=embed, view=view)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\abc.py", line 1644, in send
+    data = await state.http.send_message(channel.id, params=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\discord\http.py", line 756, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50013): Missing Permissions
